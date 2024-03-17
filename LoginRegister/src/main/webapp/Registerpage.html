@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  form div {
+    margin-bottom: 10px;
+  }
+  form input, form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <form action="Validate" method="POST">
+    <h2>Registration Form</h2>
+    <div>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+    </div>
+    <div>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" required><br>
+    </div>
+    <div>
+      <label for="country">Country:</label><br>
+      <select id="country" name="country" required>
+        <option value="">Select Country</option>
+        <option value="Nepal">Nepal</option>
+        <option value="India">India</option>
+        <option value="UK">UK</option>
+        <option value="Australia">Australia</option>
+        <option value="Spain">Germany</option>
+        <option value="France">France</option>
+        <option value="Italy">Italy</option>
+        <option value="Japan">Japan</option>
+
+      </select><br>
+    </div>
+    <div>
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
+    </div>
+    <br>
+    <input type="submit" value="Register">
+  </form>
+</div>
+
+</body>
+</html>

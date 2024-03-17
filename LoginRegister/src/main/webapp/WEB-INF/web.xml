@@ -9,4 +9,44 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Controller</display-name>
+    <servlet-name>Controller</servlet-name>
+    <servlet-class>com.loginpage.Controller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Controller</servlet-name>
+    <url-pattern>/Controller</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ControllerClass</display-name>
+    <servlet-name>ControllerClass</servlet-name>
+    <servlet-class>com.loginpage.ControllerClass</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControllerClass</servlet-name>
+    <url-pattern>/ControllerClass</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Controllers</display-name>
+    <servlet-name>Controllers</servlet-name>
+    <servlet-class>com.loginpage.Controllers</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Controllers</servlet-name>
+    <url-pattern>/Controllers</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>Validate</servlet-name>
+  <servlet-class>com.loginpage.ValidateRegistration</servlet-class>
+  
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Validate
+  </servlet-name>
+  <url-pattern>/Validate</url-pattern>
+  </servlet-mapping>
 </web-app>
